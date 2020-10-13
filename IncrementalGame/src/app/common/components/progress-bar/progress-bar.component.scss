@@ -1,0 +1,21 @@
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #cccccc;
+    position: relative;
+}
+
+.progress-bar-percentage {
+    background: red;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+}
+
