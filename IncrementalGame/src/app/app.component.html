@@ -10,16 +10,28 @@
   <!-- content area, maybe side bar? Multiple Side bars? Not sure yet -->
   <div class="row h-100 justify-content-center">
     <div class="col-3 m-2 p-2 border border-secondary">
-      Side bar area?<br>
-      -Item 1<br>
-      -Item 2<br>
-      -Item 3<br>
+      <ul class="list-group">
+        <li *ngFor="let producer of producers" class="list-group-item">
+          <div class="justify-content-start">
+            {{producer.name}}: {{producer.currentQuantity}}
+          </div>
+
+          <div>
+            <button
+              class="btn btn-primary purchase-btn"
+              [class.disabled]="currentValue < producer.nextCost"
+              [disabled]="currentValue < producer.nextCost"
+              (click)="purchaseProducer(producer.name)"
+            >
+              {{ producer.nextCost }}
+            </button>
+          </div>
+
+        </li>
+      </ul> 
     </div>
     <div class="col-8 m-2 p-2 border border-primary">
-      <h3>Main Content Area</h3><br>
-      Can display progress bars <br>
-      Or maybe little sprites if we get creative<br>
-      Or just a bunch of "stuff"
+      <b>Current $: {{(currentValue | number : '1.2-2')}}</b>
     </div>
   </div>
 </div>

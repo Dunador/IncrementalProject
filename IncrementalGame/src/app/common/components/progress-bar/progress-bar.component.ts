@@ -20,5 +20,4 @@ export class ProgressBarComponent implements OnInit {
       const percent = (this.currentValue / this.neededValue) * 100;
       return (percent <= 100 ? percent : 100);
   }
-
 }
