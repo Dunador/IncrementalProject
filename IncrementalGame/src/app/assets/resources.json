@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Wood",
+        "quantity": 0,
+        "revealed": true,
+        "gainPerSecond": 0
+    },
+    {
+        "name": "Food",
+        "quantity": 0,
+        "revealed": true,
+        "gainPerSecond": 0
+    },
+    {
+        "name": "Stone",
+        "quantity": 0,
+        "revealed": true,
+        "gainPerSecond": 0
+    }
+]

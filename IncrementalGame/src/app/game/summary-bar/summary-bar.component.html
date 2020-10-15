@@ -1,0 +1,5 @@
+<div class="row border border-dark rounded m-2">
+  <div *ngFor="let resource of resources | resourceFilter" class="col-md-3">
+    {{ resource.name }}: {{ resource.quantity }} ({{ resource.gainPerSecond }}/s)
+  </div>
+</div>
